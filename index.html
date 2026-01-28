@@ -12,19 +12,27 @@
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: white;
             text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
-            padding: 60px 20px;
-            max-width: 600px;
+            padding: 40px 20px;
+            max-width: 500px;
             margin: auto;
+            background: rgba(0,0,0,0.4);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 1.1rem;
             margin-bottom: 30px;
+            line-height: 1.5;
             opacity: 0.9;
         }
         .btn {
@@ -42,9 +50,13 @@
             transform: scale(1.05);
         }
         .footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 0.9rem;
             opacity: 0.7;
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .btn { font-size: 1rem; padding: 12px 25px; }
         }
     </style>
 </head>
@@ -52,15 +64,16 @@
 
     <div class="container">
         <h1>📈 StockWaves</h1>
-        <p>Stock Market Updates | Learning | Analysis<br>
-           Join our Telegram channel for daily market insights.</p>
+        <p>Get daily stock market updates, analysis, and signals.<br>
+        Join our Telegram channel to stay ahead in the market.</p>
 
-        <a class="btn" href="https://t.me/+r3i8oXH_xcJkYWZl" target="_blank">
+        <!-- Fixed Telegram Link -->
+        <a class="btn" href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank" rel="noopener noreferrer">
             🚀 Join Telegram Channel
         </a>
 
         <div class="footer">
-            <p>⚠️ Market investments are subject to risk.</p>
+            <p>⚠️ Stock investments are subject to risk. Trade responsibly.</p>
         </div>
     </div>
 
