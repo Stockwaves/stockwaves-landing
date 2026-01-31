@@ -5,6 +5,9 @@
 <title>StockWaves - SEBI Registered Research Analyst</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Speed Optimization -->
+<link rel="preconnect" href="https://img.icons8.com">
+
 <style>
 body {
     margin: 0;
@@ -17,6 +20,7 @@ body {
     padding: 15px;
 }
 
+/* Floating circles */
 .circle {
     position: absolute;
     border-radius: 50%;
@@ -29,6 +33,7 @@ body {
     100% { transform: translateY(-100vh); }
 }
 
+/* Main container */
 .container {
     text-align: center;
     padding: 40px 25px;
@@ -42,12 +47,14 @@ body {
     z-index: 2;
 }
 
+/* Logo */
 .logo {
     font-size: 2.8rem;
     font-weight: bold;
     color: #0072ff;
 }
 
+/* Headings */
 h2 {
     font-size: 1.4rem;
     line-height: 1.6;
@@ -59,6 +66,7 @@ h2 {
     margin: 15px 0;
 }
 
+/* Button */
 .btn {
     background: #00c6ff;
     color: #00334d;
@@ -68,17 +76,25 @@ h2 {
     text-decoration: none;
     font-size: 1.4rem;
     display: inline-block;
-    margin: 15px 0;
+    margin: 15px 0 5px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
+/* Micro trust */
+.micro {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Timer */
 .timer {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     color: #ff9800;
     font-size: 1rem;
 }
 
+/* Features */
 .features {
     display: flex;
     justify-content: space-around;
@@ -93,12 +109,23 @@ h2 {
     width: 40px;
 }
 
+/* Info box */
+.info-box {
+    background:#f5faff;
+    padding:15px;
+    border-radius:10px;
+    margin-top:20px;
+    font-size:0.95rem;
+}
+
+/* Disclaimer */
 .disclaimer {
     font-size: 0.85rem;
     margin-top: 22px;
     color: #333;
 }
 
+/* Popup */
 .popup {
     position: fixed;
     inset: 0;
@@ -139,6 +166,7 @@ h2 {
 
 <body>
 
+<!-- Floating elements -->
 <div class="circle" style="width:90px;height:90px;left:10%;animation-duration:28s;"></div>
 <div class="circle" style="width:60px;height:60px;left:55%;animation-duration:24s;"></div>
 <div class="circle" style="width:110px;height:110px;left:80%;animation-duration:32s;"></div>
@@ -158,14 +186,24 @@ h2 {
         🏛️ SEBI Reg No: INH000013147
     </div>
 
+    <!-- Social Proof -->
+    <div style="margin:18px 0;font-weight:bold;color:#0072ff;font-size:1.05rem;">
+        ⭐ Trusted by <strong>15,799+</strong> Indian Traders<br>
+        🔒 Free Telegram Research Community
+    </div>
+
+    <!-- CTA -->
     <a class="btn" href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">
         Join Free Telegram Channel
     </a>
+    <div class="micro">No spam • Free forever • Leave anytime</div>
 
+    <!-- Timer -->
     <div class="timer">
         ⏳ Limited-time access ends in <span id="seconds">300</span>s
     </div>
 
+    <!-- Features -->
     <div class="features">
         <div class="feature-item">
             <img src="https://img.icons8.com/color/48/stock.png"><br>Nifty
@@ -178,6 +216,15 @@ h2 {
         </div>
     </div>
 
+    <!-- Who should join -->
+    <div class="info-box">
+        <strong>Who should join?</strong><br>
+        ✔ Working professionals & serious traders<br>
+        ✔ Beginners who want structured market learning<br>
+        ❌ Not for guaranteed profit seekers
+    </div>
+
+    <!-- Disclaimer -->
     <div class="disclaimer">
         ⚠️ <strong>Disclaimer:</strong><br>
         This content is for educational purposes only.<br>
@@ -187,10 +234,11 @@ h2 {
     </div>
 </div>
 
+<!-- Popup -->
 <div class="popup" id="popup">
     <div class="popup-box">
-        <h3>Free Market Research Updates</h3>
-        <p>Join before access expires</p>
+        <h3>Join 15,799+ Traders</h3>
+        <p>Free market research updates during live market hours</p>
         <a href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">Join Now</a>
         <div class="close" onclick="closePopup()">Close</div>
     </div>
@@ -205,6 +253,7 @@ setInterval(() => {
     }
 }, 1000);
 
+// Popup after 3 seconds
 setTimeout(() => {
     document.getElementById("popup").style.display = "flex";
 }, 3000);
