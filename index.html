@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0a66c2, #f7941d);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +21,8 @@ body {
 .circle {
     position: absolute;
     border-radius: 50%;
-    background: #fff;
-    opacity: 0.12;
+    background: #ffffff;
+    opacity: 0.15;
     animation: float 25s linear infinite;
 }
 @keyframes float {
@@ -35,14 +35,14 @@ body {
     text-align: center;
     padding: 50px 40px;
     border-radius: 22px;
-    background: rgba(0, 0, 0, 0.32);
+    background: rgba(0, 0, 0, 0.30);
     backdrop-filter: blur(6px);
     max-width: 760px;
     color: #fff;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-/* Logo animation */
+/* Logo */
 .logo {
     font-size: 3.2rem;
     font-weight: bold;
@@ -66,8 +66,8 @@ h2 {
 
 /* Button */
 .btn {
-    background: #f7941d;
-    color: #000;
+    background: #00c6ff;
+    color: #00334d;
     font-weight: bold;
     padding: 22px 45px;
     border-radius: 14px;
@@ -118,25 +118,23 @@ h2 {
     z-index: 999;
 }
 .popup-box {
-    background: #fff;
+    background: #ffffff;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     max-width: 320px;
 }
-.popup-box h3 {
-    color: #000;
-}
+.popup-box h3,
 .popup-box p {
     color: #000;
 }
 .popup-box a {
     display: block;
     margin-top: 15px;
-    background: #f7941d;
+    background: #00c6ff;
     padding: 15px;
     border-radius: 10px;
-    color: #000;
+    color: #00334d;
     font-weight: bold;
     text-decoration: none;
 }
@@ -150,7 +148,6 @@ h2 {
 
 <body>
 
-<!-- Floating circles -->
 <div class="circle" style="width:90px;height:90px;left:10%;animation-duration:25s;"></div>
 <div class="circle" style="width:60px;height:60px;left:50%;animation-duration:20s;"></div>
 <div class="circle" style="width:120px;height:120px;left:80%;animation-duration:30s;"></div>
@@ -178,33 +175,15 @@ h2 {
         ⏳ Unlock it fast before it’s expired: <span id="seconds">300</span>s
     </div>
 
-    <div class="features">
-        <div class="feature-item">
-            <img src="https://img.icons8.com/color/48/stock.png"><br>Nifty
-        </div>
-        <div class="feature-item">
-            <img src="https://img.icons8.com/color/48/bank-building.png"><br>Bank Nifty
-        </div>
-        <div class="feature-item">
-            <img src="https://img.icons8.com/color/48/price-tag.png"><br>Options
-        </div>
-    </div>
-
     <div class="disclaimer">
         ⚠️ <strong>Disclaimer as per SEBI Guidelines:</strong><br>
-        Mr. Sandeep is a SEBI Registered Research Analyst (Reg. No: INH000013147).<br>
-        Registration granted by SEBI does not guarantee performance or returns.<br>
-        Investments in securities market are subject to market risks.<br>
-        Past performance is not indicative of future results.<br>
-        No assured or guaranteed returns are provided.
+        Registration does not guarantee returns. Market risks apply.
     </div>
 </div>
 
-<!-- Popup -->
 <div class="popup" id="popup">
     <div class="popup-box">
         <h3>🔥 Free SEBI Registered Calls</h3>
-
         <p>Join Telegram before access expires</p>
         <a href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">Join Now 🚀</a>
         <div class="close" onclick="closePopup()">Close</div>
@@ -220,7 +199,6 @@ setInterval(() => {
     }
 }, 1000);
 
-// Popup after 5 seconds
 setTimeout(() => {
     document.getElementById("popup").style.display = "flex";
 }, 5000);
