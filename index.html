@@ -17,7 +17,6 @@ body {
     padding: 15px;
 }
 
-/* Floating circles */
 .circle {
     position: absolute;
     border-radius: 50%;
@@ -30,7 +29,6 @@ body {
     100% { transform: translateY(-100vh); }
 }
 
-/* Main container */
 .container {
     text-align: center;
     padding: 40px 25px;
@@ -44,14 +42,12 @@ body {
     z-index: 2;
 }
 
-/* Logo */
 .logo {
     font-size: 2.8rem;
     font-weight: bold;
     color: #0072ff;
 }
 
-/* Headings */
 h2 {
     font-size: 1.4rem;
     line-height: 1.6;
@@ -63,7 +59,6 @@ h2 {
     margin: 15px 0;
 }
 
-/* Button */
 .btn {
     background: #00c6ff;
     color: #00334d;
@@ -77,7 +72,6 @@ h2 {
     box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
-/* Timer (soft, like earlier) */
 .timer {
     margin-top: 8px;
     font-weight: bold;
@@ -85,7 +79,6 @@ h2 {
     font-size: 1rem;
 }
 
-/* Features */
 .features {
     display: flex;
     justify-content: space-around;
@@ -100,14 +93,12 @@ h2 {
     width: 40px;
 }
 
-/* Disclaimer */
 .disclaimer {
     font-size: 0.85rem;
     margin-top: 22px;
     color: #333;
 }
 
-/* Popup */
 .popup {
     position: fixed;
     inset: 0;
@@ -157,9 +148,9 @@ h2 {
 
     <h2>
         SEBI Registered Research Analyst<br>
-        Providing <strong>3–6 Research-Based Calls Daily</strong><br>
+        Providing <strong>10–15 Research Updates During Market Hours</strong><br>
         Nifty | Bank Nifty | Stock Options<br>
-        <strong>For Educational Purpose Only</strong>
+        <strong>Educational Purpose Only</strong>
     </h2>
 
     <div class="sebi-info">
@@ -168,11 +159,11 @@ h2 {
     </div>
 
     <a class="btn" href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">
-        Join Telegram Channel
+        Join Free Telegram Channel
     </a>
 
     <div class="timer">
-        ⏳ Access available for limited time: <span id="seconds">300</span>s
+        ⏳ Limited-time access ends in <span id="seconds">300</span>s
     </div>
 
     <div class="features">
@@ -189,17 +180,17 @@ h2 {
 
     <div class="disclaimer">
         ⚠️ <strong>Disclaimer:</strong><br>
+        This content is for educational purposes only.<br>
         Registration with SEBI does not guarantee returns.<br>
         Market investments are subject to risk.<br>
-        No guaranteed or assured returns.
+        No guaranteed or assured profits.
     </div>
 </div>
 
-<!-- POPUP -->
 <div class="popup" id="popup">
     <div class="popup-box">
-        <h3>Free SEBI Research Updates</h3>
-        <p>Join the Telegram channel before access expires</p>
+        <h3>Free Market Research Updates</h3>
+        <p>Join before access expires</p>
         <a href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">Join Now</a>
         <div class="close" onclick="closePopup()">Close</div>
     </div>
@@ -214,7 +205,6 @@ setInterval(() => {
     }
 }, 1000);
 
-// Popup after 3 seconds
 setTimeout(() => {
     document.getElementById("popup").style.display = "flex";
 }, 3000);
