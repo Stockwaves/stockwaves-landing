@@ -8,154 +8,140 @@
 <link rel="preconnect" href="https://img.icons8.com">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 15px;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:15px;
 }
-
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    background: #ffffff;
-    opacity: 0.15;
-    animation: float 30s linear infinite;
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:#fff;
+    opacity:.15;
+    animation:float 30s linear infinite;
 }
-@keyframes float {
-    0% { transform: translateY(100vh); }
-    100% { transform: translateY(-100vh); }
+@keyframes float{
+    0%{transform:translateY(100vh)}
+    100%{transform:translateY(-100vh)}
 }
-
-.container {
-    text-align: center;
-    padding: 40px 25px;
-    border-radius: 18px;
-    background: #ffffff;
-    max-width: 720px;
-    width: 100%;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 2;
+.container{
+    background:#fff;
+    max-width:720px;
+    width:100%;
+    padding:40px 25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.3);
+    position:relative;
+    z-index:2;
 }
-
-.logo {
-    font-size: 2.6rem;
-    font-weight: bold;
-    color: #0072ff;
+.logo{
+    font-size:2.6rem;
+    font-weight:bold;
+    color:#0072ff;
 }
-
-h2 {
-    font-size: 1.45rem;
-    line-height: 1.6;
-    margin: 14px 0;
+h2{
+    font-size:1.45rem;
+    margin:14px 0;
+    line-height:1.6;
 }
-
-.sub {
-    font-size: 1.05rem;
-    color: #444;
+.sub{
+    font-size:1.05rem;
+    color:#444;
 }
-
-.sebi-info {
-    font-weight: bold;
-    margin: 15px 0;
+.sebi-info{
+    font-weight:bold;
+    margin:15px 0;
 }
-
-.btn {
-    background: #00c6ff;
-    color: #00334d;
-    font-weight: bold;
-    padding: 18px 35px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 1.4rem;
-    display: inline-block;
-    margin: 15px 0 5px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+.btn{
+    background:#00c6ff;
+    color:#00334d;
+    font-weight:bold;
+    padding:18px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:1.4rem;
+    display:inline-block;
+    margin:15px 0 5px;
+    box-shadow:0 6px 16px rgba(0,0,0,.25);
 }
-
-.micro {
-    font-size: 0.9rem;
-    color: #555;
+.micro{
+    font-size:.9rem;
+    color:#555;
 }
-
-.timer {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #ff9800;
+.timer{
+    margin-top:10px;
+    font-weight:bold;
+    color:#ff9800;
 }
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.features{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:20px;
 }
-.feature-item {
-    margin: 10px;
-    font-weight: bold;
+.feature-item{
+    margin:10px;
+    font-weight:bold;
 }
-.feature-item img {
-    width: 40px;
-}
-
-.info-box {
+.feature-item img{width:40px}
+.info-box{
     background:#f5faff;
     padding:15px;
     border-radius:10px;
     margin-top:20px;
-    font-size:0.95rem;
+    font-size:.95rem;
+    text-align:left;
 }
-
-.disclaimer {
-    font-size: 0.85rem;
-    margin-top: 22px;
-    color: #333;
+.disclaimer{
+    font-size:.85rem;
+    margin-top:22px;
+    color:#333;
 }
-
-.popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
 }
-.popup-box {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 14px;
-    text-align: center;
-    max-width: 300px;
+.popup-box{
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    max-width:300px;
 }
-.popup-box a {
-    display: block;
-    margin-top: 12px;
-    background: #00c6ff;
-    padding: 14px;
-    border-radius: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #00334d;
+.popup-box a{
+    display:block;
+    margin-top:12px;
+    background:#00c6ff;
+    padding:14px;
+    border-radius:10px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#00334d;
 }
-.close {
-    margin-top: 10px;
-    cursor: pointer;
-    color: #555;
+.close{
+    margin-top:10px;
+    cursor:pointer;
+    color:#555;
 }
 </style>
 </head>
 
 <body>
 
-<div class="circle" style="width:90px;height:90px;left:10%;"></div>
-<div class="circle" style="width:60px;height:60px;left:55%;"></div>
-<div class="circle" style="width:110px;height:110px;left:80%;"></div>
+<div class="circle" style="width:90px;height:90px;left:10%"></div>
+<div class="circle" style="width:60px;height:60px;left:55%"></div>
+<div class="circle" style="width:110px;height:110px;left:80%"></div>
 
 <div class="container">
     <div class="logo">📈 StockWaves</div>
@@ -163,6 +149,7 @@ h2 {
     <h2>Learn How Professionals Read the Market</h2>
     <div class="sub">
         Free research updates during live market hours<br>
+        <strong>(10–15 research updates daily)</strong><br>
         Nifty | Bank Nifty | Stock Options
     </div>
 
@@ -197,7 +184,8 @@ h2 {
     </div>
 
     <div class="info-box">
-        ✔ For traders who want structured market learning<br>
+        ✔ Working professionals looking for structured market learning<br>
+        ✔ Beginners who want to understand Nifty & Options properly<br>
         ⚠️ Suitable for traders who understand market risk
     </div>
 
@@ -218,17 +206,17 @@ h2 {
 </div>
 
 <script>
-let timeLeft = 300;
-setInterval(() => {
-    if (timeLeft > 0) {
+let timeLeft=300;
+setInterval(()=>{
+    if(timeLeft>0){
         timeLeft--;
-        document.getElementById("seconds").textContent = timeLeft;
+        document.getElementById("seconds").textContent=timeLeft;
     }
-}, 1000);
+},1000);
 
-setTimeout(() => {
-    document.getElementById("popup").style.display = "flex";
-}, 3000);
+setTimeout(()=>{
+    document.getElementById("popup").style.display="flex";
+},3000);
 </script>
 
 </body>
