@@ -38,7 +38,7 @@ body {
     background: #ffffff;
     max-width: 720px;
     width: 100%;
-    color: #000000;
+    color: #000;
     box-shadow: 0 12px 30px rgba(0,0,0,0.3);
     position: relative;
     z-index: 2;
@@ -49,14 +49,13 @@ body {
     font-size: 2.8rem;
     font-weight: bold;
     color: #0072ff;
-    margin-bottom: 10px;
 }
 
 /* Headings */
 h2 {
     font-size: 1.4rem;
     line-height: 1.6;
-    margin: 10px 0 15px;
+    margin: 12px 0 15px;
 }
 
 .sebi-info {
@@ -78,11 +77,12 @@ h2 {
     box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
-/* Timer */
+/* Timer (soft, like earlier) */
 .timer {
     margin-top: 8px;
     font-weight: bold;
     color: #ff9800;
+    font-size: 1rem;
 }
 
 /* Features */
@@ -149,79 +149,4 @@ h2 {
 <body>
 
 <div class="circle" style="width:90px;height:90px;left:10%;animation-duration:28s;"></div>
-<div class="circle" style="width:60px;height:60px;left:55%;animation-duration:24s;"></div>
-<div class="circle" style="width:110px;height:110px;left:80%;animation-duration:32s;"></div>
-
-<div class="container">
-    <div class="logo">📈 StockWaves</div>
-
-    <h2>
-        SEBI Registered Research Analyst<br>
-        Providing <strong>3–6 Research-Based Calls Daily</strong><br>
-        Nifty | Bank Nifty | Stock Options<br>
-        <strong>For Educational Purpose Only</strong>
-    </h2>
-
-    <div class="sebi-info">
-        👤 Research Analyst: Mr. Sandeep<br>
-        🏛️ SEBI Reg No: INH000013147
-    </div>
-
-    <a class="btn" href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">
-        Join Telegram Channel
-    </a>
-
-    <div class="timer">
-        ⏳ Access available for limited time: <span id="seconds">300</span>s
-    </div>
-
-    <div class="features">
-        <div class="feature-item">
-            <img src="https://img.icons8.com/color/48/stock.png"><br>Nifty
-        </div>
-        <div class="feature-item">
-            <img src="https://img.icons8.com/color/48/bank-building.png"><br>Bank Nifty
-        </div>
-        <div class="feature-item">
-            <img src="https://img.icons8.com/color/48/price-tag.png"><br>Options
-        </div>
-    </div>
-
-    <div class="disclaimer">
-        ⚠️ <strong>Disclaimer:</strong><br>
-        Registration with SEBI does not guarantee returns.<br>
-        Market investments are subject to risk.<br>
-        Past performance is not indicative of future results.<br>
-        No guaranteed or assured returns.
-    </div>
-</div>
-
-<div class="popup" id="popup">
-    <div class="popup-box">
-        <h3>SEBI Registered Research Updates</h3>
-        <p>Join our Telegram channel for educational market insights</p>
-        <a href="https://t.me/joinchat/r3i8oXH_xcJkYWZl" target="_blank">Join Now</a>
-        <div class="close" onclick="closePopup()">Close</div>
-    </div>
-</div>
-
-<script>
-let timeLeft = 300;
-setInterval(() => {
-    if (timeLeft > 0) {
-        timeLeft--;
-        document.getElementById("seconds").textContent = timeLeft;
-    }
-}, 1000);
-
-setTimeout(() => {
-    document.getElementById("popup").style.display = "flex";
-}, 6000);
-
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-}
-</script>
-
-</body>
-</html>
+<div class="circle" style
